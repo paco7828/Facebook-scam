@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <style>
+        @font-face {
+            font-family: 'facebookfont';
+            src: url('font/urw-form-semicond-extra-bold.ttf') format('truetype');
+        }
+
+        html, body{
+            position: fixed;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            background-color: #fef9e3;
+            padding: 10px 20px 10px 20px;
+            display: flex;
+            height: 60px;
+        }
+
+        header>a {
+            margin-left: 2%;
+            font-family: sans-serif;
+            line-height: 20px;
+            font-size: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: sans-serif;
+            color: #2c79ee;
+        }
+
+        main {
+            width: 100%;
+            height: 100%;
+            transform: translate(33%, 3%);
+        }
+
+        input {
+            width: 90%;
+            position: relative;
+            left: -30%;
+            height: 45px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            border: none;
+            background-color: #f4f8fb;
+            padding: 0 15px 0 15px;
+        }
+
+        input::placeholder {
+            font-size: 17px;
+        }
+
+        #loginBtn {
+            width: 90%;
+            position: relative;
+            left: -30%;
+            height: 45px;
+            border-radius: 5px;
+            border: none;
+            background-color: #1877f5;
+            color: #ffffff;
+            font-size: 18px;
+            font-family: sans-serif;
+            margin: 10px 0 15px 0;
+        }
+
+        main>h3 {
+            color: #2c79ee;
+            font-family: 'facebookfont';
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        #lines {
+            display: flex;
+            margin-top: 5%;
+            opacity: 0.6;
+            position: relative;
+            right: 28%;
+        }
+
+        #firstLine,
+        #secondLine {
+            width: 130px;
+            height: 1px;
+            background-color: grey;
+            margin-top: 2%;
+        }
+
+        #lines>p {
+            margin: 0 15px 0 15px;
+            font-size: 17px;
+            font-family: sans-serif;
+        }
+
+        #createaccBtn {
+            width: 300px;
+            position: relative;
+            right: 23%;
+            margin-top: 5%;
+            height: 35px;
+            background-color: transparent;
+            border-radius: 5px;
+            border: 1px solid rgba(82, 81, 81, 0.5);
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        #langBox {
+            position: relative;
+            left: -35%;
+            display: grid;
+            grid-template-columns: 200px 200px;
+            row-gap: 5px;
+            text-align: center;
+            margin-top: 15%;
+        }
+
+        #langBox>button {
+            width: 20px;
+            position: relative;
+            right: -45%;
+            background-color: transparent;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+
+        #langBox>button>a {
+            color: black;
+            opacity: 0.6;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        #langBox>a{
+            color: grey;
+            font-size: 12px;
+        }
+
+        #credits {
+            position: relative;
+            left: 9%;
+            margin-top: 5%;
+            line-height: 35px;
+            opacity: 0.6;
+            font-size: 11px;
+            font-family: sans-serif;
+        }
+
+        #smallP{
+            position: relative;
+            left: -8%;
+            font-size: 10px;
+        }
+
+        #forgotPassA{
+            position: relative;
+            right: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="images/phoneicon.jpg" alt="phoneicon">
+        <a href="#">A ,,Facebook Lite'' telepítésével gyorsabban <br> böngészhetsz.</a>
+    </header>
+    <main>
+        <h3>facebook</h3>
+        <form>
+            <input type="text" placeholder="Mobiltelefonszám vagy e-mail-cím">
+            <br>
+            <input type="password" placeholder="Jelszó">
+            <br>
+            <button id="loginBtn">Bejelentkezés</button>
+        </form>
+        <a id="forgotPassA" href="#">Elfelejtetted a jelszavadat?</a>
+        <div id="lines">
+            <div id="firstLine"></div>
+            <p>vagy</p>
+            <div id="secondLine"></div>
+        </div>
+        <button id="createaccBtn">Új fiók létrehozása</button>
+        <div id="langBox">
+            <a href="#">Magyar</a>
+            <a href="#">English (US)</a>
+            <a href="#">Deutsch</a>
+            <a href="#">Français (France)</a>
+            <a href="#">Italiano</a>
+            <a href="#">Español</a>
+            <a href="#">Português (Brasil)</a>
+            <button><a href="#">+</a></button>
+        </div>
+        <div id="credits">
+            <p id="smallP">Névjegy &bull; Súgó &bull; Továbbiak</p>
+            <p>Meta © 2023</p>
+        </div>
+    </main>
+</body>
+
+</html>
